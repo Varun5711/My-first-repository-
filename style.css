@@ -158,3 +158,73 @@ body {
 .product:hover {
     box-shadow: 5px 5px 10px black;
 }
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        padding: 0 20px;
+        height: auto;
+    }
+
+    .nav-part-1 ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .content-left,
+    .content-right {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .content-left h1 {
+        font-size: 35px;
+    }
+
+    .content-left p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .product {
+        height: 300px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        padding: 0 10px;
+    }
+
+    .nav-part-1 ul {
+        gap: 5px;
+    }
+
+    .nav-part-2 i {
+        margin-right: 10px;
+        font-size: 18px;
+    }
+
+    .content-left h1 {
+        font-size: 28px;
+    }
+
+    .content-left p {
+        font-size: 14px;
+    }
+
+    .product {
+        height: 250px;
+        width: 180px;
+    }
+
+    .btn {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+}
